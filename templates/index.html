@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CashFlow</title>
+  <!-- <link href="/dist/output.css" rel="stylesheet"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <!-- ====== Navbar Section Start -->
+  <div
+  aria-hidden="true"
+  class="flex w-full absolute -top-96 left-1/2 transform -translate-x-1/2 -z-50"
+>
+  <div class="bg-gradient-to-r from-blue-300/50 to-blue-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem]"></div>
+  <div class="bg-gradient-to-tl from-blue-50 via-blue-50 to-blue-50 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem] "></div>
+</div>
+  <header class="flex items-center z-90 w-full pt-2 bg-none :bg-">
+    <div class="container mx-auto">
+      <div class="relative flex items-center justify-between -mx-4">
+        <div class="max-w-full px-4 w-80">
+          <!-- <h2 class="text-4xl font-semibold">
+            <span class="text-5xl font-bold text-blue-600">E</span>edlweiss</h2> -->
+          <img src="../static/images/edelweiss-tokio-life-300x121.png" alt="" srcset="" class="">
+        </div>
+        <div class="flex items-center justify-around mx-auto w-full px-4">
+          <div>
+            <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive' " id="navbarToggler"
+              class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden">
+              <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color :bg-white"></span>
+              <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color :bg-white"></span>
+              <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color :bg-white"></span>
+            </button>
+            <nav>
+              <ul class="flex justify-between">
+                <li>
+                  <a href="javascript:void(0)"
+                    class="flex py-2 text-xl font-medium text-body-color hover:text- lg:ml-12 lg:inline-flex :text--6 :hover:text-white">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    class="flex py-2 text-xl font-medium text-body-color hover:text- lg:ml-12 lg:inline-flex :text--6 :hover:text-white">
+                    Payment
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    class="flex py-2 text-xl font-medium text-body-color hover:text- lg:ml-12 lg:inline-flex :text--6 :hover:text-white">
+                    Features
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    class="flex py-2 text-xl font-medium text-body-color hover:text- lg:ml-12 lg:inline-flex :text--6 :hover:text-white">
+                    PowerBI
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="justify-end hidden pr-16 sm:flex lg:pr-0 flex gap-4 items-center">
+            <a href="javascript:void(0)" class="py-3 text-lg font-medium px-7 text- :text-white hover:text-primary">
+              Login
+            </a>
+            <a href="javascript:void(0)"
+              class="py-3 text-medium font-medium text-white rounded-md bg-blue-500 px-7 hover:bg-primary/90">
+              Sign Up
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== Navbar Section End -->
+
+  <div class="relative ">
+    <div class="mx-24 pt-8 ">
+      <div class="mx-4  flex flex-wrap flex-1 items-center">
+        <div class="w-full  py-4 md:py-10 lg:w-1/2">
+          <div class="hero-content  items-center  md:px-6 ">
+
+            <div class="main-head mb-4">
+              <span class="inline-block px-4  rounded-full my-8  header-info mx-auto md:pr-8 md:pl-4 py-2 bg-blue-100 ">
+                <h3 class="text-center hidden md:block md:text-lg font-medium  text-blue-600">
+                  Maximize the cashflow with AI systems
+                </h3>
+
+              </span>
+              <h1 class="!text-gray-700 my-4  text-4xl leading-10 text-center md:text-left md:mb-6  font-bold ">
+                Track your Company CashFlow
+              </h1>
+
+              <h1
+                class="text-dark text-xl text-center md:text-left md:mb-6  md:text-3xl font-semibold   text-[#2a3342]">
+                A Unique Solution To Make
+              </h1>
+            </div>
+            <p
+              class="py-2 md:leading-[2rem] text-center md:text-left font-semibold mb-8 max-w-[480px] text-lg md:text-xl text-gray-500">
+              Our Solution provide end-to-end analytitcs and manages and maximes the company cashflow Data
+            </p>
+            <div class="flex flex-row justify-center md:justify-start gap-8">
+              <button type="button"
+                class="py-2 px-4 inline-flex items-center gap-x-2 text-lg font-semibold rounded-lg border border-transparent bg-blue-500 text-white hover:bg-blue-600 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600">
+                Learn More
+              </button>
+              <button type="button"
+                class="py-2 px-4 inline-flex items-center gap-x-2 text-lg font-semibold rounded-lg border border-blue-500 text-blue-500 hover:border-blue-400 hover:text-blue-400 disabled:opacity-50 disabled:pointer-events-none border-blue-500 text-blue-500 hover:text-blue-400 hover:border-blue-400 focus:outline-none focus:ring-1 focus:ring-gray-600">
+                Explore
+              </button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-4 md:w-1/2 ">
+          <div class=" md:my-10  xl:ml-auto :text-right">
+            <img src='../static/images/Business innovation based on alternative financial services.png' alt="hero" class="object-fit" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h1 class=" mb-8 m text-center   md:leading-[5.5rem] text-3xl md:text-4xl font-semibold  text-[#343A40]">
+      <span className="text-green-600 text-4xl md:text-5xl font-bold font-poppins">C</span>ashFlow Services
+    </h1>
+    <div>
+      <h1 class='text-4xl mt-8 text-center'> </h1>
+      <div class="grid grid-cols-1 mx-auto my-10 w-4/5 lg:grid-cols-3">
+        <div class="main-box flex flex-col border-2 rounded-xl m-8 hover:scale-105 ease-in-out duration-300">
+          <div class="main-img p-10">
+            <img src='../static/images/rupee (2).png' alt='Molecule' class='m-auto w-40' />
+          </div>
+          <div class="head pb-6">
+            <h2 class='text-xl  text-center font-semibold'>CashFlow</h2>
+          </div>
+
+        </div>
+   <a href="https://app.powerbi.com/reportEmbed?reportId=c74224a9-e8a5-4fa9-a92e-6aac168d1141&autoAuth=true&ctid=cca3f0fe-586f-4426-a8bd-b8146307e738">
+        <div class="main-box flex flex-col border-2 rounded-xl m-8 hover:scale-105 ease-in-out duration-300">
+          <div class="main-img p-10">
+            <img src='../static/images/dashboard (1).png' alt='Molecule' class='m-auto w-40' />
+          </div>
+          <div class="head pb-6">
+            <h2 class='text-xl  text-center font-semibold'>DashBoards</h2>
+          </div>
+
+        </div>
+      </a>
+      <a href="http://localhost:8501/">
+        <div class="main-box flex flex-col border-2 rounded-xl m-8 hover:scale-105 ease-in-out duration-300">
+          <div class="main-img p-10">
+            <img src='../static/images/cash-flow.png' alt='Periodic' class='m-auto w-40' />
+          </div>
+          <div class="head pb-6">
+            <h2 class='text-xl text-center font-semibold'>Chat with Data</h2>
+          </div>
+
+        </div>
+      </a>
+
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
